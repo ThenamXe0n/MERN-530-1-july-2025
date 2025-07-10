@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms in html</title>
+  </head>
+  <body>
+    <p>
+      <form>
+        <fieldset>
+          <legend>student enquiry form</legend>
+
+          <label for="name">student name</label>
+          <input
+            required
+            id="name"
+            type="search"
+            placeholder="enter your name"
+          />
+          <br /><br />
+          <label for="contactNo">contact no.</label>
+          <input
+            maxlength="10"
+            pattern="^[6-9]\d{7}$"
+            required
+            id="contactNo"
+            type="text"
+          /><br /><br />
+          <label for="email">email</label>
+          <input required id="email" type="email" /><br />
+          <br />
+          <label for="message">message</label><br />
+          <textarea width="250" cols="12" rows="5" id="message"> </textarea>
+          <br />
+          <br />
+          <!-- ===========select============ -->
+          <select>
+            <option>--select city--</option>
+            <optgroup label="MP">
+              <option value="indore cleanest city">indore</option>
+              <option value="dewas">dewas</option>
+              <option value="ujjain">ujjain</option>
+            </optgroup>
+
+            <optgroup label="MH">
+              <option>mumbai</option>
+              <option>pune</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <input list="courseList" placeholder="enter course name" />
+          <datalist id="courseList">
+            <option>full stack</option>
+            <option>front-end</option>
+            <option>back-end</option>
+          </datalist>
+          <br />
+          <br />
+          <label>password</label>
+          <input
+            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+            type="password"
+            placeholder="enter your password"
+          />
+          <br />
+          <br />
+          <!-- <button>submit</button> -->
+          <button>send form</button>
+        </fieldset>
+      </form>
+
+      <div id="container_1" style="background-color: blue">
+        <h2>item 1</h2>
+        <h2>item 2</h2>
+        <h2>item 3</h2>
+      </div>
+
+      <div id="container_2">
+        <h2>item 4</h2>
+        <h2>item 5</h2>
+        <h2>item 6</h2>
+      </div>
+      <span></span>
+    </p>
+  </body>
+</html>
