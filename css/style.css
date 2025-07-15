@@ -1,0 +1,71 @@
+/* //seletors  */
+
+/* types of selectors */
+/*1. tag selector /element selector  */
+
+
+button{
+    background-color: blue;
+}
+
+/* 2 . class selector use .  */
+.positive{
+    background-color: green;
+}
+
+.negative{
+    background-color: red;
+}
+
+.round{
+    border-radius: 5000px;
+}
+
+
+/* 3 id selector #  */
+
+#main{
+    border: 5px solid green;
+}
+
+/* 4 universal selector // global selector  */
+
+
+/* what is casscading style sheet ? what do you mean by casscading */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+#box{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    /* border: 10px solid blue; */
+    /* padding: 20px; */
+    /* margin: 0px 0px 0px 0px; short hand property */
+    margin-left: 30px;
+    border-width: 39px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 300px 0px 300px 0px; /*tl tr br bl*/
+  overflow-x: hidden;
+
+
+     /*y-axis , x-axis*/
+   
+}
+
+
+/* //box modal // */
+/* height units : px,rem,em | dynamic unit % , vh ,vw
+widht units : px,rem,em | dynamic unit % , vh ,vw
+margin units : px,rem,em 
+padding
+border
+outine
+content */
+
+
