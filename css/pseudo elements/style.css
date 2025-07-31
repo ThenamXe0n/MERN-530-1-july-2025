@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+p{
+    font-size: 1.rem;
+    width: 10vw;
+    
+}
+
+p::first-letter{
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+}
+p::first-line{
+    text-decoration: underline;
+}
+
+p::selection{
+    background-color: yellow;
+    color: white;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+}
+input::placeholder{
+    color: rgb(0, 64, 255);
+   text-transform: capitalize;
+   font-family: "Playwrite HU", cursive;
+}
+
+
+li::marker{
+    content:"+";
+    color: green;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    background-size: 10px;
+}
+#splash{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform:rotateY(180deg);
+}
+#section2::before{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-100%);
+    content: url("https://coffee-app-flame.vercel.app/assets/coffee_blast.png");
+    height: 100px;
+    display: flex;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+    margin-top: 40px;
+}
+
+h3::before{
+    content: "jkhjhhhhhjhhkhj";
+    position: absolute;
+    display: flex;
+    height: 10px;
+    border-radius: 400px;
+    width: 400px;
+    background: url('https://img.freepik.com/free-vector/geometric-groovy-pattern_23-2148854270.jpg')
+}
+
+/* // before and after */
