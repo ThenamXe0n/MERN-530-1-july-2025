@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property in css</title>
+    <style>
+      section {
+        border: 2px solid blue;
+        /* display: none; */
+      }
+      /* h1{
+        background-color: red;
+        display: inline;
+      }
+      h2{
+        display: inline;
+      } */
+      h1,
+      h2,
+      h3 {
+        display: flex; //always on containers
+      }
+
+      #box-container {
+        height: 50vh;
+        width: 50vh;
+        display: flex;
+        gap:10px;
+
+        background-color: black;
+      }
+      .box {
+        margin: 5px;
+
+        height: 70px;
+        width: 70px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <section>
+      <h1>Display Property</h1>
+      <h2>heading 2</h2>
+      <h3>heading 3</h3>
+    </section> -->
+
+    <section id="box-container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div> -->
+    </section>
+  </body>
+</html>

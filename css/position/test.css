@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+#sec_2{
+    height:300vh ;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    display: flex;
+    gap: 25px;
+}
+
+#box{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    position:sticky;
+    top: 30%;
+    background-color: yellow;
+}
+
+#rohitsharma{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}

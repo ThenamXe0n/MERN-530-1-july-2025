@@ -1,0 +1,42 @@
+section{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#sec_2{
+  
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/03/20/23/background-4032775_1280.png');
+}
+
+#sec_2 div{
+      backdrop-filter: blur(5px) brightness(1.5);
+    height: 50%;
+    width: 80%;
+    display: flex;
+      
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#sec_2 div h1{
+    font-size: 5rem;
+}
+
+#sec_2 div p {
+    font-size: 2rem;
+    max-width: 500px;
+}
+
+#js{
+    transform:;
+    filter:invert(1);
+}

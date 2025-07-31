@@ -1,0 +1,37 @@
+section {
+  height: 100vh;
+  width: 100vw;
+}
+#sec-one {
+  background-color:linear-gradient(red,blue);
+}
+#sec-two {
+  background-image: url("./404_coc.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0%;
+}
+
+#wishlist {
+  height: 91px;
+  width: 76px;
+  opacity: 0.2;
+  background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+  background-position: -40rem 2rem;
+  background-size: 123rem;
+}
+
+#wishlist:hover {
+  height: 91px;
+  width: 76px;
+  background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+  background-position: -46rem 2rem;
+  background-size: 123rem;
+  transition: 1s;
+}
+#sec-three{background-color: rgba(255, 0, 0, 0.21);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThu522hPYAZ_PS4frFM29W9pIsuwrgdsjJkA&s");
+}

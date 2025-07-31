@@ -1,0 +1,94 @@
+/* //position */
+/* values : static , relative ,absolute,fixed,sticky */
+
+/* by default all element have static */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+padding: 10px 30px;
+  width: 100vw;
+  background-color: black;
+  color: white;
+
+  position: fixed;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+#section1 {
+    position: absolute;
+  background-color: aqua;
+}
+#section2 {
+    z-index: 3;
+  background-color: rgb(30, 0, 255);
+}
+
+#whatsApp {
+  height: 80px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 400px;
+  border: 2px solid;
+  overflow: hidden;
+}
+#whatsApp img {
+  height: 100%;
+  width: 100%;
+}
+
+#box {
+    position: relative;
+  height: 350px;
+  width: 300px;
+  border: 5px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: aliceblue;
+}
+
+#box button{
+    padding: 20px 10px ;
+    border-radius: 10px;
+    border: none;
+    background-color: yellow;
+    position: absolute;
+}
+
+#menu{
+    position: absolute;
+    display: flex;
+    color: black;
+    right: 40px;
+    top: 5rem;
+    flex-direction: column;
+    gap: 10px;
+    background-color: beige;
+    height: 400px;
+    width: fit-content;
+    padding: 20px;
+}

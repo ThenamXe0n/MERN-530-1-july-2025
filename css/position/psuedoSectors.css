@@ -1,0 +1,57 @@
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* psuedo classes */
+/* //hover  */
+
+button1:hover {
+  background-color: red;
+  /* scale: 0.5; */
+  cursor: grabbing;
+  transition: 500ms;
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 10px black;
+}
+
+/* /active  */
+
+button:active {
+  scale: 0.9;
+  background-color: white;
+  transition: 500ms ease-in-out;
+  color: black;
+  box-shadow: 0px 8px 10px black;
+}
+
+
+/* // links a tag  */
+
+a:visited{
+    color:red
+}
+
+
+#nav{
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+    background-color: pink;
+}
+#nav p {
+    border: 2px solid ;
+}
+
+#nav div{
+    height: 0px;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+#nav:hover div{
+   height: 500px;
+
+}
