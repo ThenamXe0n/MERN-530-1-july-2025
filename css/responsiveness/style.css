@@ -1,0 +1,144 @@
+/* default styling */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000a12;
+  color: white;
+}
+
+header {
+  display: flex;
+  padding: 15px 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+#left_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#nav_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+#menuBtn{
+    display: none;
+}
+
+#search_bar {
+  background-color: rgba(255, 253, 253, 0.09);
+  padding: 10px 15px;
+}
+
+#search_bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.customBtn {
+  background-color: #0063b8;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+#section_1 {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  gap: 150px;
+
+  padding: 20px;
+  justify-content: center;
+}
+
+#info_container {
+  width: 40%;
+  gap: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#info_container h2 {
+  font-size: 4rem;
+}
+
+#info_container button {
+  width: fit-content;
+}
+
+#image_container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------small screens ----  */
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+ header{
+    justify-content: space-between;
+ }
+    #section_1 {
+     gap: 10px;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  #info_container {
+    width: 100%;
+  }
+  #info_container h2{
+    font-size: 2rem;
+  }
+  #image_container{
+    width: 80%;
+  }
+
+  #nav_container{
+    display: none;
+  }
+  #search_bar{
+    display: none;
+  }
+  #menuBtn{
+    display: block;
+  }
+}
+
+/* --------- large phones ------ */
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  #screen {
+    background-color: blue;
+  }
+}
+
+/* --------tablets-------------  */
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  #screen {
+    background-color: yellow;
+  }
+}
+
+/* ----------------small laptop -------------------- */
+@media only screen and (min-width: 1001px) and (max-width: 1280px) {
+  #screen {
+    background-color: purple;
+  }
+}
