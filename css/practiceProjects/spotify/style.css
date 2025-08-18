@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#screen {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 5% 95%;
+}
+
+header,
+aside,
+main,
+footer {
+  height: 100%;
+  width: 100%;
+  color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border: 2px solid;
+}
+
+header {
+  background: black;
+  grid-column: span 2;
+  display: flex;
+}
+aside {
+  background: gray;
+}
+main {
+  background: green;
+}
+footer {
+  background: black;
+  grid-column: span 2;
+}
+
+.size-8 {
+  height: 54px;
+  width: 54px;
+}
+.size-6 {
+  height: 34px;
+  width: 34px;
+}
+
+#search_container {
+  width: 30%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  height: 100%;
+}
+
+#search_bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  background-color: black;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+#search_bar input {
+  background: transparent;
+  padding: 4px;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+#search_bar input::placeholder {
+  color: rgba(144, 142, 142, 0.434);
+}
+
+#song_dropdown {
+  top: 79px;
+  display: none;
+  height: 400px;
+  position: absolute;
+  width: 600px;
+  background: yellow;
+  border: 1px solid white;
+}
+
+#search_bar input:hover ~ div#song_dropdown{
+display: block;
+}

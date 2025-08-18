@@ -1,0 +1,47 @@
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(56, 52, 52);
+  display: grid;
+
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 40% 60%;
+  gap: 5px;
+  box-sizing: border-box;
+}
+header {
+  border: 1px solid green;
+  background: black;
+  grid-column: span 2;
+  display: flex;
+}
+header img {
+  margin: 10px;
+}
+aside {
+  border: 1px solid green;
+}
+main {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+footer {
+  border: 1px solid green;
+  grid-column: span 2;
+}
+.size-6 {
+  height: 34px;
+  width: 200px;
+}
+.home-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}

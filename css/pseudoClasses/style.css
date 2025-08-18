@@ -1,0 +1,51 @@
+
+input:checked{
+    background-color: red;
+    color: red;
+    height: 200px;
+    width: 200px;
+}
+
+h1:active{
+    color: blueviolet;
+    scale: 1.5;
+}
+
+a:visited{
+    color: brown;
+}
+
+
+#nameInput::placeholder{
+    color: blue;
+}
+
+#nameInput:focus{
+    background-color: blueviolet;
+}
+
+p::first-line{
+    color: blue;
+    font-size: 4rem;
+}
+
+h3{
+    height: 400px;
+    position: relative;
+    width: 40vw;
+    background-color: bisque;
+}
+h3::before{
+content: "url('')";
+}
+h3::after{
+content: "";
+height: 20px;
+width: 20px;
+display: flex;
+background-color: red;
+border-radius: 100%;
+position: absolute;
+top: -15px;
+right: 0;
+}

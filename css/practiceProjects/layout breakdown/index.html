@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+
+*{
+    scroll-behavior: smooth;
+}
+
+      .card p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#contact"><button>contact</button></a>
+    <section class="w-screen  grid-cols-4">
+      <div
+        id="card1"
+        class="card p-4 m-3 rounded-sm flex flex-col gap-3 bg-gray-500"
+      >
+        <div
+          class="bg-white size-6 flex items-center justify-center rounded-full"
+        >
+          o
+        </div>
+
+        <h3 class="font-bold">UI/UX design</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo
+        </p>
+        <a href="./ui-ux.html" class="text-gray-300">Learn more => </a>
+      </div>
+      <div
+        id="card2"
+        class="card p-4 m-3 rounded-sm flex flex-col gap-3 bg-gray-500"
+      >
+        <div
+          class="bg-white size-6 flex items-center justify-center rounded-full"
+        >
+          o
+        </div>
+
+        <h3 class="font-bold">Application design</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsa
+          ipsum nemo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Ab ipsa ipsum nemo
+        </p>
+        <a href="./application-design.html" class="text-gray-300">Learn more => </a>
+      </div>
+    </section>
+    <section id="contact" class="w-screen bg-black h-screen"></section>
+  </body>
+</html>
