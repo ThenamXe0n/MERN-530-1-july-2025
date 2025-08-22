@@ -48,3 +48,5 @@ let y;
 // var x="hi"
 console.log("value of x is:", x);console.log("value of y is : ", y);
 console.log("sum of x and y", x + y);
+
+
