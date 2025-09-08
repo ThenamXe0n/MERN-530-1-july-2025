@@ -2,7 +2,7 @@ let inventors = [
   "Nikola Tesla",
   "Thomas Edison",
   "Leonardo da Vinci",
-  "Alexander Graham Bell",
+  "alexander graham bell",
   "Marie Curie",
   "James Watt",
 ];
