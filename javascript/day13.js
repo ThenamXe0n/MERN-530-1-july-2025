@@ -60,3 +60,9 @@ for (let i = 0; i <= inventors.length - 1; i++) {
   }
   console.log(`inventor no ${i + 1} ${inventors[i]}`);
 }
+
+
+
+
+
+///
