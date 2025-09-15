@@ -1,0 +1,84 @@
+const orders = [
+  {
+    id: 201,
+    customer: "Aarav",
+    dish: "Paneer Butter Masala",
+    type: "Main Course",
+    status: "Preparing",
+  },
+  {
+    id: 202,
+    customer: "Bhavya",
+    dish: "Masala Dosa",
+    type: "South Indian",
+    status: "Delivered",
+  },
+  {
+    id: 203,
+    customer: "Chirag",
+    dish: "Chole Bhature",
+    type: "North Indian",
+    status: "Preparing",
+  },
+  {
+    id: 209,
+    customer: "Ishaan",
+    dish: "Rajma Chawal",
+    type: "North Indian",
+    status: "Preparing",
+  },
+  {
+    id: 210,
+    customer: "Jiya",
+    dish: "Aloo Paratha",
+    type: "Breakfast",
+    status: "Preparing",
+  },
+  {
+    id: 204,
+    customer: "Diya",
+    dish: "Veg Biryani",
+    type: "Rice",
+    status: "Delivered",
+  },
+  {
+    id: 205,
+    customer: "Eshan",
+    dish: "Pav Bhaji",
+    type: "Street Food",
+    status: "Preparing",
+  },
+  {
+    id: 206,
+    customer: "Farah",
+    dish: "Paneer Butter Masala",
+    type: "Main Course",
+    status: "Preparing",
+  },
+  {
+    id: 207,
+    customer: "Gautam",
+    dish: "Dhokla",
+    type: "Snack",
+    status: "Cancelled",
+  },
+  {
+    id: 208,
+    customer: "Harini",
+    dish: "Idli Sambar",
+    type: "South Indian",
+    status: "Delivered",
+  },
+];
+
+
+let PreparingOrederList = orders.filter((order)=>{
+return order.status === "Preparing"
+})
+let ButterPaneerMasalaOrederList = orders.find((order)=>{
+return order.dish === "Paneer Butter Masala"
+})
+
+let chiragOrderIndex = orders.findIndex((order)=>{
+return order.customer === "Chirag"
+})
