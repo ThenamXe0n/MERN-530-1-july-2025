@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #list-container {
+        background-color: rgb(134, 240, 149);
+        flex: 1;
+      }
+      h1{
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Document object modal</h1>
+    <img
+      src="http://tutorialspoint.com/html/images/html_dom.jpg"
+      alt="model-diagram"
+    />
+    <div id="container">
+      <p style="flex: 1">
+        The Document Object Model (DOM) is a programming interface for web
+        documents. It represents the page so that programs can change the
+        document structure, style, and content. The DOM represents the document
+        as nodes and objects; that way, programming languages can interact with
+        the page. A web page is a document that can be either displayed in the
+        browser window or as the HTML source. In both cases, it is the same
+        document but the Document Object Model (DOM) representation allows it to
+        be manipulated. As an object-oriented representation of the web page, it
+        can be modified with a scripting language such as JavaScript.
+      </p>
+      <div id="list-container">
+        <ul>
+          <li>root</li>
+          <li>
+            nodes
+            <ol>
+              <li>element</li>
+              <li>attribute</li>
+              <li>text</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./dom-day1.js"></script>
+  </body>
+</html>
