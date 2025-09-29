@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML event and js eventListners</title>
+  </head>
+  <body
+    onkeypress="(function(event){if(event.key==='a'){alert('this is a alert')}if(event.key==='c'){confirm('confirm you pressed c')}})(event)"
+    onmousewheel="myEventAction()"
+  >
+    <!-- //------------------mouse events(pointer event )------------------ -->
+    <button onclick="myEventAction(event)">click me</button>
+    <h1 onclick="myEventAction(event)">click me</h1>
+    <!-- <button onmousedown="myEventAction()">click me</button> -->
+    <!-- <button onmouseup="myEventAction()">click me</button> -->
+    <!-- <button onmousemove="myEventAction()">click me</button> -->
+    <!-- <button onmouseover="myEventAction()">click me</button> -->
+    <!-- <button onmouseleave="myEventAction()">click me</button> -->
+    <!-- <button onmousewheel="myEventAction()">click me</button>  -->
+
+    <!-- -----------------input events------------------ -->
+    <input
+      type="text"
+      placeholder="this is on input"
+      oninput="handleOnInput(event)"
+    />
+    <!-- <input type="text" onchange="handleOnChange()" placeholder="this is on change" /> -->
+
+    <!-- <--------------keyboard events------------------>
+
+    <script src="./dom-day6.js"></script>
+  </body>
+</html>
