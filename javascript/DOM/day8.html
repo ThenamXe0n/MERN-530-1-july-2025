@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>student registration</legend>
+      <form id="myForm">
+        <label for="student_name">
+          <strong>student name : </strong>
+        </label>
+        <br />
+        <input
+          type="text"
+          placeholder="enter student name"
+          id="student_name"
+          name="student_name"
+        />
+        <br />
+        <label for="contact"> <strong>contact no</strong> </label><br />
+        <input
+          pattern="^[6789]\d{9}$"
+          required
+          id="contact"
+          name="contact"
+          placeholder="enter contact number"
+          type="text"
+          maxlength="10"
+        />
+        <br />
+        <label for="email"> <strong> email </strong> </label><br />
+        <input
+          type="email"
+          placeholder="enter your email"
+          id="email"
+          name="email"
+          required
+        />
+        <br />
+        <br />
+        <button>register</button>
+      </form>
+    </fieldset>
+
+    <script src="./dom-day8.js"></script>
+  </body>
+</html>

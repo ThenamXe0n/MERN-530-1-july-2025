@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Image Editor</title>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-center bg-black text-white p-3">
+      Image Editor
+    </h1>
+    <section class="flex items-center">
+      <div
+        class="min-h-[40vh] my-16 h-[40vh] min-w-[40vh] w-[40vh] mx-auto border m-5"
+        id="image_container"
+      >
+        <img
+          id="poster_img"
+          style="border-style: groove;"
+          class="h-full  border-white w-full object-cover object-top"
+          src="https://i.pinimg.com/736x/20/14/32/201432e0b7d94ef885e59eb7b729a22e.jpg"
+          alt="poster"
+        />
+        <h5 id="imageName" class="tracking-wider my-2 text-center text-indigo-600">
+          MOON DARK WALLPAPER
+        </h5>
+        <q class="text-wrap max-w-[300px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          cupiditate natus praesentium earum consequatur impedit tenetur eaque
+          vel, vitae minima aliquid aspernatur placeat, voluptatem, quam
+          consequuntur recusandae accusantium quasi omnis?
+        </q>
+        <i class="text-orange-600">- uploader name</i>
+      </div>
+
+      <div style="background-color: white;color:black" id="edit_form" class="w-8/12 border p-3 mx-auto">
+        <h4 class="text-center capitalize text-3xl my-8">editing options</h4>
+        <div class="grid gap-4 grid-cols-2">
+          <!-- =======image field========== -->
+          <div class="w-full">
+            <span>Image URL</span><br />
+            <input
+              type="url"
+              id="imgURL"
+              name="imgURL"
+              placeholder="enter a image url"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+          <!-- ============image name/title  -->
+          <div class="w-full">
+            <span>Image Name</span><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+          <!-- ===================background color============ -->
+          <div class="w-full">
+            <span>backround color</span><br />
+            <input
+              type="color"
+              id="background"
+              name="background"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+          <!-- ===================font color============ -->
+          <div class="w-full">
+            <span>font color</span><br />
+            <input
+              type="color"
+              id="font"
+              name="font"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+          <!-- ===================frame border============ -->
+          <div class="w-full">
+            <span>frame border</span><br />
+            <input
+              type="range"
+              min="0"
+              max="20"
+              id="border"
+              name="border"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+          <!-- ===================frame border============ -->
+          <div class="w-full">
+            <span>blur</span><br />
+            <input
+              type="range"
+              min="0"
+              max="15"
+              id="blur"
+              name="blur"
+              class="border w-full p-1 rounded-md border-gray-600 my-2"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="./imageEditor.js"></script>
+  </body>
+</html>
