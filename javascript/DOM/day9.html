@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #preview {
+        border: 2px solid;
+        height: 200px;
+        width: 200px;
+        border-radius: 10%;
+        overflow: hidden;
+      }
+
+      #profilePic {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" multiple id="upload" name="upload">
+    <div style="display: flex; align-items: start; gap: 10px">
+      <input
+        type="url"
+        placeholder="enter image url"
+        id="profile"
+        name="profile"
+      /><button id="btn">upload</button>
+      <div id="preview">
+        <img id="profilePic" src="" alt="profile" />
+      </div>
+    </div>
+    <script src="./dom-day9.js"></script>
+  </body>
+</html>
