@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom alert</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        height: 100vh;
+        width: 100vh;
+        background-color: rgb(150, 127, 255);
+        padding: 3rem 5rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      #modal {
+        background: rgba(0, 0, 0, 0.403);
+        position: fixed;
+        z-index: 7;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        display: none;
+        left: 0;
+      }
+      #imgEventPoster {
+        height: 100%;
+        width: 100%;
+      }
+
+      #parent{
+        height: 50%;
+        width: 50%;
+        background-color: orange;
+      }
+      #child{
+        height: 50%;
+        width: 50%;
+        background-color: rgb(0, 217, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Event delegation and phases</h1>
+      <p>
+        Event Delegation is basically a pattern to handle events efficiently.
+        Instead of adding an event listener to each and every similar element,
+        we can add an event listener to a parent element and call an event on a
+        particular target using the .target property of the event object.
+      </p>
+      <button id="btn" style="width: fit-content">view phases</button>
+    </section>
+    <section id="modal">
+      <div id="form-area" style="height: 40%; width: 40%; background-color: white">
+        <img
+          id="imgEventPoster"
+          src="https://media.geeksforgeeks.org/wp-content/uploads/20200623183418/geeks.png"
+          alt="event phases"
+        />
+        <input id="inputText" type="text" placeholder="enter event name" />
+      </div>
+    </section>
+
+
+    <!-- <section>
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </section> -->
+    <script src="./popup.js"></script>
+  </body>
+</html>
