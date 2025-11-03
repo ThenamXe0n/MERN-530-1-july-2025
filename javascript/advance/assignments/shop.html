@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-black text-white">
+      <h1 class="text-center font-bold">Shop</h1>
+    </header>
+    <main id="cardContainer" class="grid grid-cols-4 gap-5">
+      <div id="card" class="w-full h-full m-2 rounded-md border">
+        <div class="h-[150px] w-[150px] overflow-hidden">
+          <img
+            class="h-full w-full object-cover"
+            src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+            alt="thumbnail-poster"
+          />
+        </div>
+        <div class="p-2">
+          <h3 class="text-md">productname</h3>
+          <p class="text-xs line-clamp-2 text-blue-600">
+            The Essence Mascara Lash Princess is a popular mascara known for its
+            volumizing and lengthening effects. Achieve dramatic lashes with
+            this long-lasting and cruelty-free formula.
+          </p>
+          <div class="flex my-2 gap-2 flex-wrap">
+            <div
+              class="text-xs text-white bg-orange-600 rounded-full w-fit px-2"
+            >
+              beauty
+            </div>
+            <div
+              class="text-xs text-white bg-orange-600 rounded-full w-fit px-2"
+            >
+              product
+            </div>
+          </div>
+          <p>$ 296</p>
+          <span>category : beauty</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./shop.js"></script>
+  </body>
+</html>
