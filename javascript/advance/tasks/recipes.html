@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Recipes Page</title>
+  </head>
+  <body>
+    <header class="flex items-center justify-between bg-black text-white py-3">
+      Recipes
+      <input class="bg-white/20 placeholder:text-white/50 rounded-md p-1 text-white-50 text-black " type="text" placeholder="search recipe">
+    </header>
+    <main
+      class="grid grid-cols-1 gap-10 p-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:max-w-7xl max-w-2xl m-5 w-11/12 min-h-screen mx-auto shadow-lg shadow-blue-200 rounded-md"
+    >
+      <botton id="loadBtn" class="bg-black text-white px-3 py-1 rounded-md h-fit w-fit  hover:bg-green-500 duration-200 active:scale-95 active:shadow-black active:shadow-lg active:bg-red-600 uppercase cursor-pointer mt-3 rounded-md">load recipes</botton>
+      <!-- card  -->
+      <!-- <div class="w-full min-h-64 h-fit rounded-md overflow-hidden">
+        <div class="w-full">
+          <img
+            class="h-full w-full"
+            src="https://cdn.dummyjson.com/recipe-images/1.webp"
+            alt=""
+          />
+        </div>
+        <div class="p-3 bg-orange-100">
+          <p class="capitalize">
+            rating : <span class="text-orange-500">4</span>/5
+          </p>
+          <h3 class="font-bold text-lg">Pizza cheese chilli</h3>
+          <div class="flex mt-2 items-center flex-wrap gap-2">
+            <b
+              class="px-2 text-xs uppercase text-white shadow-sm shadow-yellow-200 bg-orange-500 rounded-full"
+              >cheese</b
+            >
+            <b
+              class="px-2 text-xs uppercase text-white shadow-sm shadow-yellow-200 bg-orange-500 rounded-full"
+              >chilli</b
+            >
+          </div>
+          <button
+            class="bg-black text-white px-3 w-full hover:bg-green-500 duration-200 active:scale-95 active:shadow-black active:shadow-lg active:bg-red-600 uppercase cursor-pointer mt-3 rounded-md"
+          >
+            view receipe
+          </button>
+        </div>
+      </div> -->
+
+      <!-- <div class="flex flex-col p-2 items-start gap-2 w-[245px] bg-black text-white overflow-hidden rounded-md ">
+        <div class="h-[150px] rounded-md object-cover  w-full overflow-hidden ">
+          <img
+            class="h-full w-full"
+            src="https://cdn.dummyjson.com/recipe-images/1.webp"
+            alt=""
+          />
+        </div>
+        <h3 class="">Pizza</h3>
+      </div> -->
+      <script src="./recipes.js"></script>
+    </main>
+  </body>
+</html>
