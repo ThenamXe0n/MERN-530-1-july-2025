@@ -35,19 +35,7 @@ function addRecipeCard(recipeDetail) {
         class="w-full flex flex-col justify-between h-full min-h-64 rounded-md overflow-hidden"
       >
         <div id="" class="w-full relative">
-        <section class='w-full bg-white h-full z-50 fixed top-0 left-0 flex items-center justify-center'>
-  <!-- From Uiverse.io by yohohopizza --> 
-<div class="flex flex-row gap-2">
-  <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce"></div>
-  <div
-    class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.3s]"
-  ></div>
-  <div
-    class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.5s]"
-  ></div>
-</div>
-
-  </section>
+       
           <img
             class="h-full w-full image"
             src=${recipeDetail.image}
@@ -58,7 +46,7 @@ function addRecipeCard(recipeDetail) {
           <p class="capitalize">
             rating : <span class="text-orange-500">${recipeDetail.rating} </span>/5
           </p>
-          <h3 class="font-bold text-lg">${recipeDetail.name}</h3>
+          <h3 class="font-bold text-lg">${recipeDetail.recipeName}</h3>
           <div class="flex mt-2 items-center flex-wrap gap-2">
             <b
               class="px-2 text-xs uppercase text-white shadow-sm shadow-yellow-200 bg-orange-500 rounded-full"
@@ -101,6 +89,6 @@ function handleSearchRecipe() {
 
 searchButton.addEventListener("click", handleSearchRecipe);
 
-function handleLoad() {
-  document.getElementById("loader").style.display = "none";
-}
+// function handleLoad() {
+//   document.getElementById("loader").style.display = "none";
+// }

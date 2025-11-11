@@ -21,8 +21,15 @@ function handleFormSubmit(e) {
     studentName: studentNameInput.value,
     contact: contactInput.value,
     email: emailInput.value,
-    profileUrl: URL.createObjectURL(profileInput.files[0]) ,
+    profileUrl: URL.createObjectURL(profileInput.files[0]),
   };
+
+  ///adding data in localstorage
+  let prevData = JSON.parse(localStorage.getItem("studentDetail")) || [];
+  prevData.push(data);
+  // let currentData = [...prevData,data]
+
+  localStorage.setItem("studentDetail", JSON.stringify(prevData));
 
   handleAddDataInTable(
     data.studentName,
@@ -68,4 +75,34 @@ function handleAddDataInTable(name, contact, email, profile) {
 
   //appending or adding html format in table body i.e tableDataBody
   tableDataBody.innerHTML += htmlFormat;
+}
+
+function loadPreviousDataInTable() {
+  //step 1 : retrive/get data from localstorage
+  let prevData = JSON.parse(localStorage.getItem("studentDetail"));
+  console.log("prev", prevData);
+
+  //step 2 : add data in table
+
+  //loop over array
+
+  prevData.forEach((item) => {
+    handleAddDataInTable(item.studentName, item.contact, item.email);
+  });
+
+  // handleAddDataInTable(
+  //   prevData[0].studentName,
+  //   prevData[0].contact,
+  //   prevData[0].email
+  // );
+  // handleAddDataInTable(
+  //   prevData[1].studentName,
+  //   prevData[1].contact,
+  //   prevData[1].email
+  // );
+  // handleAddDataInTable(
+  //   prevData[2].studentName,
+  //   prevData[2].contact,
+  //   prevData[2].email
+  // );
 }
